@@ -13,7 +13,6 @@ body {
   color: #fff;
 }
 
-/* SECTION */
 section {
   height: 100vh;
   display: flex;
@@ -23,13 +22,11 @@ section {
   text-align: center;
 }
 
-/* HERO */
 .hero h1 {
   font-size: 64px;
   letter-spacing: 6px;
 }
 
-/* FADE */
 .fade {
   opacity: 0;
   transform: translateY(40px);
@@ -41,7 +38,6 @@ section {
   transform: translateY(0);
 }
 
-/* DEVICE */
 .device {
   width: 250px;
   height: 250px;
@@ -62,7 +58,6 @@ section {
   transform: translate(-50%, -50%);
 }
 
-/* CAPSULE */
 .capsules {
   display: flex;
   gap: 20px;
@@ -81,7 +76,6 @@ section {
   color: black;
 }
 
-/* BG */
 .bg {
   position: fixed;
   top: 0;
@@ -98,19 +92,16 @@ section {
 
 <div class="bg" id="bg"></div>
 
-<!-- INTRO -->
 <section class="hero fade">
   <h1>CITY SYNC</h1>
   <p>공간은 소리로 완성된다</p>
 </section>
 
-<!-- IDEA -->
 <section class="fade">
   <h2>도시의 지금을 듣다</h2>
   <p>이미지가 아닌, 소리로 공간을 경험합니다</p>
 </section>
 
-<!-- DEVICE -->
 <section class="fade">
   <h2>MAIN DEVICE</h2>
   <p>소형 아날로그 라디오 형태</p>
@@ -136,7 +127,6 @@ section {
   <p style="opacity:0.6;">도시를 물리적으로 선택하는 경험</p>
 </section>
 
-<!-- SYSTEM -->
 <section class="fade">
   <h2>DATA → SOUND</h2>
   <p>
@@ -148,20 +138,18 @@ section {
   </p>
 </section>
 
-<!-- EXPERIENCE -->
 <section class="fade">
   <h2 id="cityTitle">지금, 연결</h2>
   <p id="desc">도시를 선택하세요</p>
 </section>
 
-<!-- CONCLUSION -->
 <section class="fade">
   <h2>같은 장치, 다른 순간</h2>
   <p>같은 도시라도 매번 다른 소리를 경험합니다</p>
 </section>
 
 <script>
-// SCROLL
+
 const fades = document.querySelectorAll(".fade");
 
 window.addEventListener("scroll", () => {
@@ -172,7 +160,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// SOUND
 let audio;
 
 function playSound(src) {
@@ -182,7 +169,6 @@ function playSound(src) {
   audio.play();
 }
 
-// CITY
 function changeCity(city) {
   const title = document.getElementById("cityTitle");
   const desc = document.getElementById("desc");
